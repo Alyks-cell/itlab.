@@ -11,11 +11,12 @@ $sql = "Select * from it Where email='$email' and password='$password' ";
 $result=mysqli_query($conn,$sql);
 
 if(mysqli_num_rows($result)>0){
-    echo"SUCCESS";
+    echo"WELCOME TO WIT!";
     exit();
 }
 else{
     echo("INVALID");
 }
 mysqli_close($conn);
+
 ?>
